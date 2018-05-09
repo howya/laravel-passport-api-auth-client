@@ -1,0 +1,35 @@
+{
+  "name": "rbennett/laravel-passport-api-auth-client",
+  "description": "Auth client to allow materialisation of server clients, along with user specific access tokens. Automatically refreshes access tokens when an API call is made that uses an expired access token.",
+  "type": "library",
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/howya/laravel_repository.git"
+    }
+  ],
+  "authors": [
+    {
+      "name": "Rob Bennett",
+      "email": "rjben@hotmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "guzzlehttp/guzzle": "~6.0",
+    "rbennett/laravel-repository": "dev-develop"
+  },
+  "autoload": {
+    "psr-4": {
+      "RBennett\\AbstractAPIAuthClient\\": "src/APIAuthclient/"
+    }
+  },
+  "require-dev": {
+    "orchestra/testbench": "~3.6"
+  },
+  "scripts": {
+    "test": [
+      "vendor/bin/phpunit"
+    ]
+  }
+}
